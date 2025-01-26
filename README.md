@@ -12,14 +12,11 @@ This repository demonstrates a Django microservices architecture using Docker, N
 - **Environment-Specific Boot Script**: Services adapt to either development or production mode based on environment variables.
 - **Makefile**: Simplifies common operations such as building, starting, and stopping services.
 
----
-
 ## Prerequisites
 - **Docker** and **Docker Compose** installed.
 - if you want using **Makefile** make sure `make` package installed on your os. ([windows](https://stackoverflow.com/questions/32127524/how-to-install-and-use-make-in-windows), [Linux](https://askubuntu.com/questions/161104/how-do-i-install-make))
 - Access to the [custom Django base image](https://hub.docker.com/r/imansadatii/python-base). Ensure the image is pulled locally before building the services.
 
----
 
 ## Services
 Consider these aliases (service_1, service_2) to make it easier to replace your own name. Be sure to replace these names with your own name wherever you see them.
@@ -45,7 +42,6 @@ Consider these aliases (service_1, service_2) to make it easier to replace your 
   - `/service_2/` -> Service 2
   - `/static/` and `/media/` -> Static and media files
 
----
 
 ## Custom Django Base Image
 This project uses a custom Django base image available on Docker Hub. The image includes:
@@ -86,7 +82,6 @@ DJANGO_ENV=developmnet or production
    - **Service 1**: `http://localhost:8001/`
    - **Service 2**: `http://localhost:8002/`
 
----
 
 ## Running the Application
 
