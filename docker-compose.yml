@@ -21,6 +21,7 @@ services:
     image: service_1:1.0
     container_name: service_1
     volumes:
+      - ./services/service_1:/app/
       - static:/app/static
       - media:/app/media
     networks:
@@ -40,6 +41,7 @@ services:
     image: service_2:1.0
     container_name: service_2
     volumes:
+      - ./services/service_2:/app/
       - static:/app/static
       - media:/app/media
     networks:
